@@ -1,0 +1,16 @@
+name: pinecone-checker
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  # Python version
+  - python=3.9
+  
+  # Conda packages (available in conda-forge)
+  - streamlit=1.32.0
+  - python-dotenv=1.0.0
+  
+  # Pip packages (not available in conda)
+  - pip
+  - pip:
+      - pinecone-client==3.0.0  # Only available via pip
